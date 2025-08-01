@@ -13,6 +13,14 @@ const commands = [
       option.setName('source')
         .setDescription('Trusted outcome source URL')
         .setRequired(true))
+    .addStringOption(option =>
+      option.setName('title')
+        .setDescription('Pool title (e.g., US CPI for July 2025)')
+        .setRequired(true))
+    .addStringOption(option =>
+      option.setName('description')
+        .setDescription('Tell more about the indicator, how it affects things, and any context')
+        .setRequired(false))
     .toJSON()
 ];
 
