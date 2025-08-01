@@ -47,5 +47,5 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply({ content: '❌ Failed to log your request.', ephemeral: true });
   }
 });
-
+console.log("Token loaded?", !!process.env.DISCORD_TOKEN);
 client.login(process.env.DISCORD_TOKEN);
