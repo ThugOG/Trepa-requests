@@ -11,7 +11,7 @@ const auth = new google.auth.GoogleAuth({
 
 const sheets = google.sheets({ version: 'v4', auth });
 
-const SPREADSHEET_ID = '1G99oS5jzrOCfq3w3m0Hwk1jdqlUSHwTNVn24dsnRFpU'; // Replace with yours
+const SPREADSHEET_ID = '1HtCBK7v1k0RTacPKBfMgxlKyo3CFOKUHNaClxf8SML0'; // Replace with yours
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
